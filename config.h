@@ -126,7 +126,7 @@ static char *colors[][ColCount] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "", "", "", "", "", "" },
+	[DEFAULT_TAGS]        = { "", "", "", "", "", "" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>" },
 };
@@ -235,7 +235,11 @@ static const char *termcmd[]  = { "terminator", NULL };
 static const char *web[]  = { "brave-browser-stable", NULL };
 static const char *files[]  = { "thunar", NULL };
 
+static const char *lock[] = { "i3lock-fancy", NULL };
 
+//static const char *dwmwallp[] = { "dwm-wallp", NULL };
+//static const char *dwmrofi[] = { "dwm-rofi", NULL };
+//static const char *dwmpmenu[] = { "dwm-pmenu", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key            function                argument */
@@ -243,6 +247,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return,     spawn,                  {.v = termcmd } },
 	{ MODKEY,		                XK_b,     	   spawn,                  {.v = web } },
 	{ MODKEY,             			XK_e,     	   spawn,                  {.v = files } },
+	{ MODKEY|ShiftMask,		        XK_Delete, 	spawn,	   	   		       {.v = lock } }, // Screen Lock	
+
 	{ MODKEY|ShiftMask,             XK_b,          togglebar,              {0} },
 	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } },
 	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } },
@@ -293,6 +299,14 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_4,                                  3)
 	TAGKEYS(                        XK_5,                                  4)
 	TAGKEYS(                        XK_6,                                  5)
+// Screenshot	
+	{ MODKEY,                       XK_F9,      spawn,          		   SHCMD ("flameshot full -p $HOME/Pictures/Screenshots/")},
+	{ MODKEY|ShiftMask,             XK_F9,      spawn,          		   SHCMD ("flameshot gui -p $HOME/Pictures/Screenshots/")},
+	{ MODKEY|ControlMask,           XK_F9,      spawn,         		   	   SHCMD ("flameshot gui --clipboard")},
+// Custom scripts		
+	{ MODKEY|ShiftMask,		        XK_w, 	   	spawn,	   	   		       SHCMD ("$HOME/.local/bin/dwm-wallp")},// Change Wallpaper
+    { MODKEY,             			XK_r,      	spawn,          		   SHCMD ("$HOME/.local/bin/dwm-rofi")}, // Rofi Menu
+	{ MODKEY|ShiftMask,		        XK_p, 	   	spawn,	   	   			   SHCMD ("$HOME/.local/bin/dwm-pmenu")}, // Power Menu
 };
 
 
