@@ -232,7 +232,7 @@ static const char *dmenucmd[] = {
 	NULL
 };
 static const char *termcmd[]  = { "terminator", NULL };
-static const char *web[]  = { "firefox-esr", NULL };
+static const char *web[]  = { "brave-browser-stable", NULL };
 static const char *files[]  = { "thunar", NULL };
 
 
