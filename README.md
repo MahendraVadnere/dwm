@@ -1,17 +1,56 @@
 # dwm
 This is my work in progress build of DWM
 
+This dwm is built with Flexipatch (<https://github.com/bakkeby/dwm-flexipatch>) and cleaned up with Flexipatch Finaliser (<https://github.com/bakkeby/flexipatch-finalizer>) so that the config.h files are easier to use.
 
+Patches
+-------
+This is a heavily patched version of DWM that contains the following patches that I have explcitly enabled:
 
-dwm - dynamic window manager
-============================
-dwm is an extremely fast, small, and dynamic window manager for X.
+```
+Always Center
+Autostart
+Status2d
+Systray
+Restartsig
+Movestack
+Pertag
+Warp
+Fullscreen
+Fakefullscreen
+Placemouse
+Resizecorners
+Swallow
+Viewontag
+Bottomstack
+Centeredmaster
+Vanitygaps
+Attachbottom
+Statuspadding
+Seamlessrestart
+```
 
+Instructions for Installation
+-----------------------------
+* Dependencies
 
-Requirements
-------------
-In order to build dwm you need the Xlib header files.
-
+```
+xorg
+xserver-xorg
+libx11-dev
+libxinerama-dev
+libxft-dev
+libxcb1-dev
+libx11-xcb-dev
+libxcb-res0-dev
+xcb
+libxcb-xkb-dev
+x11-xkb-utils
+libxkbcommon-x11-dev
+build-essential
+gcc
+make
+```
 
 Installation
 ------------
