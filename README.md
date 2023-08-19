@@ -52,6 +52,14 @@ gcc
 make
 ```
 
+* To install
+
+```
+git clone https://github.com/MahendraVadnere/dwm
+cd dwm
+make clean install
+```
+
 Installation
 ------------
 Edit config.mk to match your local setup (dwm is installed into
