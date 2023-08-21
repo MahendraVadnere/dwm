@@ -3,7 +3,7 @@
 #####################
 
 super + x
-	terminator
+	kitty
 
 # rofi launchers
 super + r
