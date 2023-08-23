@@ -38,6 +38,7 @@ echo -e "  $PWR%"
 ## VOL
 volume() {
 VOL="$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
+#VOL="$(pamixer --get-volume)"
 echo -e "$VOL"
 }
 

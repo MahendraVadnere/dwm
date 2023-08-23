@@ -233,6 +233,7 @@ static const char *dmenucmd[] = {
 };
 static const char *termcmd[]  = { "terminator", NULL };
 static const char *web[]  = { "brave-browser-stable", NULL };
+static const char *aweb[]  = { "vivaldi", NULL };
 static const char *files[]  = { "thunar", NULL };
 
 //static const char *lock[] = { "i3lock-fancy", NULL };
@@ -246,8 +247,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,          spawn,                  {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return,     spawn,                  {.v = termcmd } },
 	{ MODKEY,		                XK_b,     	   spawn,                  {.v = web } },
+	{ MODKEY,		                XK_v,     	   spawn,                  {.v = aweb } },
 	{ MODKEY,             			XK_e,     	   spawn,                  {.v = files } },
-//	{ MODKEY|ShiftMask,		        XK_Delete, 	spawn,	   	   		       {.v = lock } }, // Screen Lock	
 
 	{ MODKEY|ShiftMask,             XK_b,          togglebar,              {0} },
 	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } },

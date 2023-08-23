@@ -11,3 +11,13 @@ super + r
    		
 alt + F4
 	bash ~/.local/bin/dwm-power-menu
+#Volume Start	
+alt + ctrl + Up
+	bash ~/.local/bin/changevolume up
+	
+alt + ctrl + Down
+	bash ~/.local/bin/changevolume down
+
+alt + ctrl + m
+	bash ~/.local/bin/changevolume mute
+#Volume End
