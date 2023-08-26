@@ -11,6 +11,11 @@ super + r
    		
 alt + F4
 	bash ~/.local/bin/dwm-power-menu
+	
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+		
 #Volume Start	
 alt + ctrl + Up
 	bash ~/.local/bin/changevolume up
