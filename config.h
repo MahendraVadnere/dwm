@@ -126,7 +126,7 @@ static char *colors[][ColCount] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "", "", "", "", "", "" },
+	[DEFAULT_TAGS]        = { "", "", "", "", "", "" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>" },
 };
@@ -308,7 +308,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,		        XK_w, 	   	spawn,	   	   		       SHCMD ("$HOME/.local/bin/dwm-wallp")},// Change Wallpaper
 //  { MODKEY,             			XK_r,      	spawn,          		   SHCMD ("$HOME/.local/bin/dwm-rofi")}, // Rofi Menu
 //	{ MODKEY|ShiftMask,		        XK_r, 	   	spawn,	   	   			   SHCMD ("$HOME/.local/bin/dwm-power-menu")}, // Power Menu
-	{ MODKEY|ShiftMask,		        XK_Delete, 	spawn,	   	   			   SHCMD ("i3lock-fancy")}, // Lock Screen
+	{ MODKEY|ShiftMask,		        XK_Delete, 	spawn,	   	   			   SHCMD ("$HOME/.local/bin/dwm-lock")}, // Lock Screen
 };
 
 /* button definitions */
