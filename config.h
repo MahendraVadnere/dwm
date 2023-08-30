@@ -305,7 +305,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_F9,      spawn,          		   SHCMD ("flameshot gui -p $HOME/Pictures/Screenshots/")},
 	{ MODKEY|ControlMask,           XK_F9,      spawn,         		   	   SHCMD ("flameshot gui --clipboard")},
 // Custom scripts		
-	{ MODKEY|ShiftMask,		        XK_w, 	   	spawn,	   	   		       SHCMD ("$HOME/.local/bin/dwm-wallp")},// Change Wallpaper
+	{ MODKEY|ShiftMask,		        XK_w, 	   	spawn,	   	   		       SHCMD ("$HOME/.local/bin/dwm-wallp")},// Change Wallpaper Local
+	{ MODKEY|ControlMask,		    XK_w, 	   	spawn,	   	   		       SHCMD ("$HOME/.local/bin/dwm-walOnline")},// Change Wallpaper Online
 //  { MODKEY,             			XK_r,      	spawn,          		   SHCMD ("$HOME/.local/bin/dwm-rofi")}, // Rofi Menu
 //	{ MODKEY|ShiftMask,		        XK_r, 	   	spawn,	   	   			   SHCMD ("$HOME/.local/bin/dwm-power-menu")}, // Power Menu
 	{ MODKEY|ShiftMask,		        XK_Delete, 	spawn,	   	   			   SHCMD ("$HOME/.local/bin/dwm-lock")}, // Lock Screen

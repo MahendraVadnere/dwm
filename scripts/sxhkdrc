@@ -26,3 +26,11 @@ alt + ctrl + Down
 alt + ctrl + m
 	bash ~/.local/bin/changevolume mute
 #Volume End
+
+## redshift
+super + alt + r
+	~/.local/bin/redshift-on
+	
+super + alt + b
+	~/.local/bin/redshift-off
+
