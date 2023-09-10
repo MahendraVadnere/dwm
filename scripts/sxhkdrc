@@ -33,5 +33,10 @@ super + alt + r
 	
 super + alt + b
 	~/.local/bin/redshift-off
+	
+super + e
+		thunar
 
+super + shift + e
+	nautilus --new-window
 
