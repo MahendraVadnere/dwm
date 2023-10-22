@@ -8,6 +8,9 @@ super + x
 # rofi launchers
 super + r
    	rofi -combi-modi window,drun,run -show combi -modi combi
+   	
+alt + space
+   	rofi -combi-modi window,drun,run -show combi -modi combi
    		
 alt + F4
 	bash ~/.local/bin/dwm-power-menu

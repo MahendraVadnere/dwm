@@ -64,7 +64,7 @@ while true; do
 
 #xsetroot -name "|  $(cpu) |  $(mem) |   $(hdd) |  $(power) |  $(temp) |   $(volume) | $(date) |"
 	xsetroot -name "|^c#d08770^  $(cpu)^d^ |^c#5e81ac^  $(mem)^d^ |^c#a3be8c^  $(hdd)^d^ |^c#8fbcbb^  $(volume)^d^ | ^c#93a1a1^ $(clock)^d^"
-	
+		
 	sleep 5s
 	
 done &
