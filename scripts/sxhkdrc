@@ -47,3 +47,7 @@ super + shift + e
 ## Chromium Browser	
 super + c
 		chromium
+
+## test
+super + alt + a
+	~/.local/bin/runpy
