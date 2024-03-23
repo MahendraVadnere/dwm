@@ -1,5 +1,5 @@
 # dwm
-This is my work in progress build of DWM
+This is my work-in-progress build of DWM
 
 This dwm is built with Flexipatch (<https://github.com/bakkeby/dwm-flexipatch>) and cleaned up with Flexipatch Finaliser (<https://github.com/bakkeby/flexipatch-finalizer>) so that the config.h files are easier to use.
 
